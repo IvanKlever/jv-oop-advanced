@@ -2,9 +2,9 @@ package core.basesyntax;
 
 public class Main {
     public static void main(String[] args) {
-        int size = 6;
+        final int size = 6;
         FigureSupplier figureSupplier = new FigureSupplier();
-        Figure[] figure = new Figure[size];
+        Figures[] figure = new Figures[size];
         figure[0] = figureSupplier.getRandomFigure();
         figure[1] = figureSupplier.getRandomFigure();
         figure[2] = figureSupplier.getRandomFigure();

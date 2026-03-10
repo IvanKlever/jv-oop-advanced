@@ -1,10 +1,13 @@
 package core.basesyntax;
 
-public interface Figure {
+public abstract class Figure implements Figures {
+    private final String color;
 
-    public abstract double getArea();
+    public Figure(String color) {
+        this.color = color;
+    }
 
-    public abstract double getPerimeter();
-
-    public abstract void draw();
+    public String getColor() {
+        return color;
+    }
 }

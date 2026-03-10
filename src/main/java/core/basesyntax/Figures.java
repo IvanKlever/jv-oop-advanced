@@ -1,9 +1,10 @@
 package core.basesyntax;
 
-public enum Figures {
-    CIRCLE,
-    ISOSCELES_TRAPEZOID,
-    RIGHT_TRIANGLE,
-    RECTANGLE,
-    SQUARE
+public interface Figures {
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
+
+    public abstract void draw();
 }

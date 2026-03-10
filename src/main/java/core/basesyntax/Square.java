@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Square extends Figur {
+public class Square extends Figure {
     private final double sizeA;
 
     public Square(double sizeA, String color) {
@@ -15,7 +15,7 @@ public class Square extends Figur {
 
     @Override
     public double getPerimeter() {
-        return sizeA * 2;
+        return sizeA * 4;
     }
 
     @Override
