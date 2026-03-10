@@ -11,7 +11,13 @@ public class IsoscelesTrapezoid extends Figure {
         this.base1 = base1;
         this.base2 = base2;
         this.leg = leg;
-        this.height = Math.sqrt(leg * leg - Math.pow((base1 - base2) / 2.0, 2));
+        double value = leg * leg - Math.pow((base1 - base2) / 2.0, 2);
+
+        if (value < 0) {
+            throw new IllegalArgumentException("Invalid trapezoid dimensions");
+        }
+
+        this.height = Math.sqrt(value);
     }
 
     @Override
